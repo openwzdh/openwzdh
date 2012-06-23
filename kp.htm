@@ -7,10 +7,31 @@
 <meta name="description" content="114La,114La网址导航,114La上网导航,网址之家,网址大全,网址,搜索,音乐,娱乐,图片,小游戏,短信,社区,日记,相册,K歌,通讯簿,BLOG,天气预报,实用工具.最方便,最快捷,最多华人使用的上网导航" />
 <title>114啦[Www.114La.Com] -上网就上114啦！</title>
 <link href="http://127.0.0.1:22222/114la_upload/public/home/base.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#wrap { width:1180px; margin: 0 auto; }
+#main { width:955px; }
+#ls dd.l { width:833px; }
+#ls dd.l a { margin: 0 18px; }
+#qs-result { width:953px; }
+#bn { width:845px; display:inline; overflow: hidden; }
+#google { margin-left:5px; }
+#sw { width:430px; }
+#sw a { margin:0 8px; }
+#hot a { margin:0 10px; }
+#hot2 a { margin:0 15px; }
+#meta li a { margin:0 25px 0 0; }
+#settingBox { margin-left:914px; }
+#ls dl { font-family:Tahoma, Helvetica, Arial, "5b8b4f53", sans-serif; font-size:14px }
+
+#bm li{ width:84px;}
+#bm li.active { width:85px;background-position:0 -708px; }
+#bm li#bm-def.active { width:84px;}
+#q_int .button-wrap { width:148px;background-position: -5px -354px}
+#qs { width:161px;}
+</style>
 <style id="temp-css" type="text/css"></style>
 <script type="text/javascript" src="http://127.0.0.1:22222/114la_upload/public/home/js/base.js"></script>
 <script type="text/javascript" src="http://127.0.0.1:22222/114la_upload/public/home/js/core.js"></script>
-<script type="text/javascript">if(Cookie.get('layout')){window.location.href='kp.html';}</script>
 <base target="_blank" />
 </head>
 <body>
@@ -19,8 +40,8 @@
     <div id="top" class="clearfix">
         <div id="weather"><script>if(top.location == self.location){document.write('<iframe width="540" height="22" frameborder="0" scrolling="no" allowtransparency="true" src="public/widget/weather/index.html"></iframe>')} </script> </div>
         <ul id="set">
-            <li class="sethome"><a onclick="Yl.setHome(this,this.href); return false;" target="_self" href="http://127.0.0.1:22222/114la_upload">把114啦设为主页</a></li>
-            <li><a href="http://127.0.0.1:22222/114la_upload/" target="_parent" class="active">标准版</a> | <a href="http://127.0.0.1:22222/114la_upload/kp.html" target="_parent" onclick="Cookie.set('layout',1)">宽屏版</a></li>
+            <li class="sethome"><a onclick="Yl.setHome(this,this.href); return false;" target="_self" href="http://www.114la.com/?114la">把114啦设为主页</a></li>
+            <li><a href="/" target="_parent" onclick="Cookie.clear('layout')">标准版</a> | <a href="./kp.html" class="active" target="_parent">宽屏版</a></li>
             <li id="skinlist"><a class="blue" title="蓝色">1</a><a class="green" title="绿色">2</a><a class="pink" title="粉色">3</a></li>
             <li class="setting"><a target="_self" href="javascript:void(0);" id="showSetting">个性设置</a></li>
         </ul>
@@ -77,20 +98,26 @@
                 <ul id="cal">
                     <li class="date"><script type="text/javascript">document.write(Calendar.day());</script> </li>
                     <li class="lcal"><script type="text/javascript">document.write(Calendar.cnday());</script> </li>
-                    <li class="m"><a href="http://tool.115.com/live/calendar/" class="hl">黄历</a><a href="http://astro.114la.com/" class="yc">运程</a><a href="public/widget/clock/index.html" class="clock">闹钟</a></li>
+                    <li class="m"><a href="http://tool.114la.com/live/calendar/" class="hl">黄历</a><a href="http://astro.114la.com/" class="yc">运程</a><a href="public/widget/clock/index.html" class="clock">闹钟</a></li>
                 </ul>
-                <div id="bn2">
+                <div id="bn2" class="fl">
                 <script type="text/javascript" src="static/js/header.js"></script>
+                
                 </div>
+                <div class="fl" style="margin-left:5px;"><a rel="nr" href="http://www.vancl.com/?Source=alkj1"><img border="0" src="http://www.114la.com/static/images/banner/vancl10060.jpg" alt="VANCL 凡客诚品"></a></div>
+                <div class="fl" style="margin-left:5px;"><a href="http://www.amazon.cn/default.asp?source=114la"><img border="0" src="http://www.114la.com/static/images/banner/joyonew.gif" alt="卓越购物"></a></div>
             </div>
         </div>
         <b class="rc-bt"><b></b></b></div>
+        
+        
+        
         
     <div id="search">
         <div id="ex">
                     <p><a href="http://ie.115.com">115浏览器官网</a></p>
                 </div>
-        <div id="sm" class="clearfix">
+       <div id="sm" class="clearfix">
             <ul id="sm_tab">
                                 <li s_tab="js_type_8" >新闻</li>
                                 <li s_tab="js_type_2"  class="active" default="1">网页</li>
@@ -114,7 +141,7 @@
                                                                                                                                                                                 </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                                                                                                                                                                                                                                     <label><input class="radio" type="radio" value="engine_29" name="search_select" rad="engine_29"  checked="checked" />百度</label>
@@ -135,7 +162,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                     </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                 <label><input class="radio" type="radio" value="engine_15" name="search_select" rad="engine_15"  checked="checked" />116搜索</label>
@@ -157,7 +184,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                 </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                     <label><input class="radio" type="radio" value="engine_16" name="search_select" rad="engine_16"  checked="checked" />百度</label>
@@ -177,7 +204,7 @@
                                                                                                                                                                                                                                                                                                                                             </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                                                                                                                                                                                 <label><input class="radio" type="radio" value="engine_28" name="search_select" rad="engine_28"  checked="checked" />116搜索</label>
@@ -198,7 +225,7 @@
                                                                         </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                                                                         <label><input class="radio" type="radio" value="engine_18" name="search_select" rad="engine_18"  checked="checked" />百度</label>
@@ -218,7 +245,7 @@
                                                                                                                             </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                                                                                                                                                                                                                                                                                                                                             <label><input class="radio" type="radio" value="engine_32" name="search_select" rad="engine_32"  checked="checked" />百度</label>
@@ -235,7 +262,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                                                                                                                                                                                                                                                                                         <label><input class="radio" type="radio" value="engine_31" name="search_select" rad="engine_31"  checked="checked" />百度</label>
@@ -254,7 +281,7 @@
                                                                                                                                                                                                                                     </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://116.com/" method="get" target="_blank">
+                    <form action="http://116.com/s" method="get" target="_blank">
                         <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                                                                                                                                                                                                                                             <label><input class="radio" type="radio" value="engine_20" name="search_select" rad="engine_20"  checked="checked" />淘宝</label>
@@ -271,12 +298,12 @@
     </div>
     
         
-    <div id="hot">        <a class="red" target="_blank" href="http://www.114la.com/wangshanggouwu/index.html?3">购物</a><a class="green" target="_blank" href="http://tuan.114la.com/">团购 </a><a  target="_blank" href="http://www.114la.com/goucai/">彩票</a><a  target="_blank" href="http://www.114la.com/caijinggushi/">股票</a><a  target="_blank" href="http://www.114la.com/jijinlicai/">基金</a><a class="green" target="_blank" href="html/movie/index.htm">电影</a><a  target="_blank" href="html/kuanpin_yingshi/index.htm">视频</a><a  target="_blank" href="html/yinyue_mp3/index.htm">音乐</a><a  target="_blank" href="html/wenxue_xiaoshuo/index.htm">小说</a><a  target="_blank" href="html/youxi_wangyou/index.htm">游戏</a><a  target="_blank" href="html/bizhi_tuku/index.htm">美图</a><a  target="_blank" href="html/nba/index.htm">NBA</a><a  target="_blank" href="html/news/index.htm">新闻</a><a  target="_blank" href="html/sex/index.htm">两性</a><a  target="_blank" href="html/lady/index.htm">女性</a><a  target="_blank" href="html/car/index.htm">汽车</a><a  target="_blank" href="html/fangchanjiaju/index.htm">房产</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=鞋&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">鞋</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=牛仔裤&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">牛仔裤</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=雪地靴&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">雪地靴</a><a  target="_blank" href="http://s8.taobao.com/search?q=%C3%AB%D2%C2&pid=mm_18036115_2311920_9044980&commend=all">百搭毛衣</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=羽绒服&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">时尚羽绒服</a>    </div>
+    <div id="hot"><a class="red" target="_blank" href="http://www.114la.com/wangshanggouwu/index.html?3">购物</a><a class="green" target="_blank" href="http://tuan.114la.com/">团购 </a><a  target="_blank" href="http://www.114la.com/goucai/">彩票</a><a  target="_blank" href="http://www.114la.com/caijinggushi/">股票</a><a  target="_blank" href="http://www.114la.com/jijinlicai/">基金</a><a class="green" target="_blank" href="html/movie/index.htm">电影</a><a  target="_blank" href="html/kuanpin_yingshi/index.htm">视频</a><a  target="_blank" href="html/yinyue_mp3/index.htm">音乐</a><a  target="_blank" href="html/wenxue_xiaoshuo/index.htm">小说</a><a  target="_blank" href="html/youxi_wangyou/index.htm">游戏</a><a  target="_blank" href="html/bizhi_tuku/index.htm">美图</a><a  target="_blank" href="html/nba/index.htm">NBA</a><a  target="_blank" href="html/news/index.htm">新闻</a><a  target="_blank" href="html/sex/index.htm">两性</a><a  target="_blank" href="html/lady/index.htm">女性</a><a  target="_blank" href="html/car/index.htm">汽车</a><a  target="_blank" href="html/fangchanjiaju/index.htm">房产</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=鞋&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">鞋</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=牛仔裤&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">牛仔裤</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=雪地靴&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">雪地靴</a><a  target="_blank" href="http://s8.taobao.com/search?q=%C3%AB%D2%C2&pid=mm_18036115_2311920_9044980&commend=all">百搭毛衣</a><a  target="_blank" href="http://search8.taobao.com/browse/search_auction.htm?q=羽绒服&pid=mm_18036115_2311920_9044980&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0">时尚羽绒服</a></div>
     <div id="content">
         <div id="cate"><b class="rc-tp"><b></b></b>
             <div class="box">
                 <div id="tool">
-                    <h2 class="tool-title">实用工具<span><a href="http://tool.115.com/" rel="nr">更多&raquo;</a></span></h2>
+                    <h2 class="tool-title">实用工具<span><a href="http://tool.114la.com/" rel="nr">更多&raquo;</a></span></h2>
                     <ul>
                                                                             <li><a href="http://bbs.ylmf.net/">Ylmf论坛</a></li>
                                                     <li><a href="http://u.115.com/?114la">免费网盘</a></li>
@@ -473,7 +500,14 @@
                                         <li rel="bb3" url="http://www.114la.com/public/widget/27cn/index.htm" nocache=0>时尚美容</li>
                                         <li rel="bb4" url="http://www.114la.com/public/widget/game/index.html" nocache=0>热门游戏</li>
                                         <li rel="bb5" url="public/widget/history/index.html" nocache=0>浏览记录</li>
-                                    </ul><div id="qs"><b class="l"></b><div id="q_int" class="n"><div class="button-wrap"><input type="text" /></div></div><b class="r"></b></div>
+                                    </ul>
+                <div id="qs"><b class="l"></b>
+                    <div id="q_int" class="n">
+                        <div class="button-wrap">
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <b class="r"></b></div>
             </div>
             <div id="bb">
                 <div class="box">
@@ -539,305 +573,19 @@
             </div>
             <div id="ls"><b class="rc-tp"><b></b></b>
                 <div class="box">
-					                    <dl id="local" class="alt" style="visibility:hidden;">
+					                    <dl id="local" style="visibility:hidden;">
                         <dt id="loc_t"></dt>
                         <dd class="l" id="loc_c"></dd>
                         <dd class="m" id="loc_m"></dd>
                     </dl>
-                                                            <dl id="ls1">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/wenxue_xiaoshuo/index.htm">小 说</a></dt>
-                        <dd class="l">
-                                                            <a href="http://book.sina.com.cn/?c=spr_web_sq_114la_book_t001" >新浪小说</a>
-                                                            <a href="http://www.qidian.com/" >起点中文</a>
-                                                            <a href="http://www.hongxiu.com/?114la" >红袖言情</a>
-                                                            <a href="http://www.zongheng.com/?CO=114la" >纵横小说</a>
-                                                            <a href="http://www.txtbbs.com/" >txt小说网</a>
-                                                            <a href="http://www.15.net/" >妖屋小说</a>
-                                                            <a href="http://www.xs8.cn/" >言情小说吧</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/wenxue_xiaoshuo/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls2">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/youxi_wangyou/index.htm">游 戏</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.4399.com/" >4399小游戏</a>
-                                                            <a href="http://www.17173.com/" >17173</a>
-                                                            <a href="http://www.unionli.com/txlink.php?alid=23792" >弹弹堂</a>
-                                                            <a href="http://youxi.baidu.com/pm.xhtml?pid=11003800236_775910" style="color:#FF0130;">百度游戏</a>
-                                                            <a href="http://www.51mole.com/" >摩尔庄园</a>
-                                                            <a href="http://member.198game.com/sz/count.php?adid=1064" >幻想三国</a>
-                                                            <a href="http://www.unionli.com/txlink.php?alid=24662" >梦幻修仙</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/youxi_wangyou/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls3">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/yinyue_mp3/index.htm">音 乐</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.google.cn/music/homepage" >谷歌音乐</a>
-                                                            <a href="http://music.kukaka.org/" >酷盒</a>
-                                                            <a href="http://www.1ting.com/" >一听音乐</a>
-                                                            <a href="http://www.kuwo.cn/114la/index.htm" >酷我音乐</a>
-                                                            <a href="http://www.a8.com/" >A8音乐网</a>
-                                                            <a href="http://www.top100.cn/" >巨鲸音乐</a>
-                                                            <a href="http://www.kugou.com/2219/" >酷狗音乐</a>
-                                                            <a href="http://mp3.baidu.com/m?ie=utf-8&ct=134217728&word=&tn=ylmf_1_pg" >百度MP3</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/yinyue_mp3/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls4">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/kuanpin_yingshi/index.htm">视 频</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.tudou.com/" >土豆网</a>
-                                                            <a href="http://www.qiyi.com/" >奇艺高清</a>
-                                                            <a href="http://www.pptv.com/?rcc_id=831597960e40534af11b8d19426f39f9" >PPTV</a>
-                                                            <a href="http://video.sina.com.cn/?c=spr_web_sq_114la_video_t001" >新浪视频</a>
-                                                            <a href="http://c.ourclick.net/goto.html?t=17&ct=20&p=161&url=http%3A%2F%2Ftv.sohu.com%2Fhdtv" >搜狐高清</a>
-                                                            <a href="http://www.funshion.com/?alliance=70903" >风行电影</a>
-                                                            <a href="http://www.tom365.com/" >TOM365免费电影</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/kuanpin_yingshi/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls5">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/xiaoyouxi/index.htm">酷 玩</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.4399.com/" >4399小游戏</a>
-                                                            <a href="http://www.7k7k.com/" class="green">7k7k小游戏</a>
-                                                            <a href="http://www.51seer.com/" >赛尔号</a>
-                                                            <a href="http://www.junyilm.com/1031/catcon.asp?patat=64%2C5962" >3366游戏</a>
-                                                            <a href="http://www.3887.com/" >3887小游戏</a>
-                                                            <a href="http://www.unionli.com/txlink.php?alid=23793" >飞天西游</a>
-                                                            <a href="http://wan.115.com/tg.php?g=22&c=114la" >战将传奇</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/xiaoyouxi/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls6">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/news/index.htm">新 闻</a></dt>
-                        <dd class="l">
-                                                            <a href="http://news.sina.com.cn/" >新浪新闻</a>
-                                                            <a href="http://www.people.com.cn/" >人民网</a>
-                                                            <a href="http://news.cn.yahoo.com/?id=40020" >雅虎新闻</a>
-                                                            <a href="http://news.sohu.com/" >搜狐新闻</a>
-                                                            <a href="http://news.163.com/" >网易新闻</a>
-                                                            <a href="http://www.huanqiu.com/" >环球新闻</a>
-                                                            <a href="http://news.qq.com/" >腾讯新闻</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/news/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls7">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/junshi/index.htm">军 事</a></dt>
-                        <dd class="l">
-                                                            <a href="http://military.china.com/" >中华网军事</a>
-                                                            <a href="http://www.tiexue.net/" >铁血军事</a>
-                                                            <a href="http://mil.huanqiu.com/" >环球军事</a>
-                                                            <a href="http://mil.news.sina.com.cn/" >新浪军事</a>
-                                                            <a href="http://news.ifeng.com/mil/" >凤凰网军事</a>
-                                                            <a href="http://www.chinamil.com.cn/" >中国军网</a>
-                                                            <a href="http://www.chinaiiss.org/" >战略网</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/junshi/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls8">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/caijinggushi/index.htm">财 经</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.eastmoney.com/" >东方财富网</a>
-                                                            <a href="http://finance.qq.com/" >腾讯财经</a>
-                                                            <a href="http://www.jrj.com/?from=90005" class="red">金融界</a>
-                                                            <a href="http://finance.sina.com.cn/" >新浪财经</a>
-                                                            <a href="http://www.stockstar.com/" >证券之星</a>
-                                                            <a href="http://www.hexun.com/" >和讯财经</a>
-                                                            <a href="http://www.cnfol.com/" >中金在线</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/caijinggushi/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls9">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/mail/index.htm">邮 箱</a></dt>
-                        <dd class="l">
-                                                            <a href="http://email.163.com/" >163邮箱</a>
-                                                            <a href="http://www.126.com/" >126邮箱</a>
-                                                            <a href="http://mail.qq.com/" >QQ邮箱</a>
-                                                            <a href="http://mail.sina.com.cn/" >新浪邮箱</a>
-                                                            <a href="http://mail.cn.yahoo.com/" >雅虎邮箱</a>
-                                                            <a href="http://www.hotmail.com/" >Hotmail</a>
-                                                            <a href="http://www.gmail.com/" >GMail</a>
-                                                            <a href="http://mail.139.com/" >139邮箱</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/mail/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls10">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/soft/index.htm">电 脑</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.it168.com/" >IT168电脑</a>
-                                                            <a href="http://www.pconline.com.cn/" >太平洋电脑</a>
-                                                            <a href="http://www.zol.com.cn/" >中关村在线</a>
-                                                            <a href="http://www.xiazaiba.com/" class="green">绿色下载吧</a>
-                                                            <a href="http://www.skycn.com/index.html" >天空软件</a>
-                                                            <a href="http://www.pcpop.com/" >泡泡网</a>
-                                                            <a href="http://www.mydrivers.com/" >驱动之家</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/soft/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls11">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">购 物</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.amazon.cn/default.asp?source=114la" >卓越网</a>
-                                                            <a href="http://p.yiqifa.com/c?s=67c0d2b4&w=217523&c=247&i=159&l=0&e=114la&t=http://www.dangdang.com" >当当网</a>
-                                                            <a href="http://p.yiqifa.com/c?s=fd2887ec&w=217523&c=4275&i=4662&l=0&e=114la&t=http://www.m18.com" >麦考林</a>
-                                                            <a href="http://p.yiqifa.com/c?s=368a4a7c&w=217523&c=4509&i=5862&l=0&e=114la&t=http://www.360buy.com" >京东商城</a>
-                                                            <a href="http://www.vancl.com/?Source=alkj1" >凡客服饰</a>
-                                                            <a href="http://p.yiqifa.com/c?s=5763f9c0&w=217523&c=4566&i=6222&l=0&e=114啦&t=http://www.vipshop.com/index.php" >唯品会折扣</a>
-                                                            <a href="http://p.yiqifa.com/c?s=f41a1f6a&w=217523&c=1085&i=724&l=0&e=114la&t=http://www.ihush.com/index.php" >俏物悄语</a>
-                                                            <a href="http://p.yiqifa.com/c?s=0a30a42c&w=217523&c=249&i=148&l=0&e=114la&t=http://www.redbaby.com.cn" >红孩子</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls12">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/love/index.htm">交 友</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.jiayuan.com/st/?id=3985&url=http://www.jiayuan.com/register" class="red">世纪佳缘</a>
-                                                            <a href="http://love.zhenai.com/901001.html" >珍爱婚恋网</a>
-                                                            <a href="http://www.juyuan.com/reg/reg03index.xhtml?type=11" >聚缘婚恋网</a>
-                                                            <a href="http://www.baihe.com/?policy=1&Channel=zyzt-wzz&Code=140026-114la" >百合网</a>
-                                                            <a href="http://www.7651.com/reg/index.html?wf=114la&st=lmm&sid=&66vv.com" >红娘网</a>
-                                                            <a href="http://spcode.baidu.com/spcode/spClick?tn=ylmf_sp&ctn=0&styleid=3959&tourl=http://www.juedui100.com/jueduiJumpResource/8959?prodid=90" >绝对100婚恋网</a>
-                                                            <a href="http://www.renren.com/?ss=17043&rt=2&g=114la" >人人网</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/love/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls13">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/lady/index.htm">女 性</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.27.cn/" >爱丽女性</a>
-                                                            <a href="http://www.mishang.com/" >迷尚时尚网</a>
-                                                            <a href="http://www.4738.com/?114la" >女人世界</a>
-                                                            <a href="http://www.yoka.com/" >YOKA时尚</a>
-                                                            <a href="http://www.rayli.com.cn/?114la" >瑞丽女性</a>
-                                                            <a href="http://cnrdn.com/rd.htm?id=1005224&r=http%3A%2F%2Fwww.vogue.com.cn" >VOGUE时尚</a>
-                                                            <a href="http://cnrdn.com/rd.htm?id=1005231&r=http%3A%2F%2Fwww.self.com.cn" >悦己SELF</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/lady/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls14">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">商 城</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.taobao.com/go/chn/tbk_channel/onsale.php?pid=mm_24289994_2336862_9037898&unid=148311" >淘宝网特卖</a>
-                                                            <a href="http://p.yiqifa.com/c?s=79f386af&w=217523&c=4220&i=4482&l=0&e=114la&t=www.lamiu.com" >兰缪内衣</a>
-                                                            <a href="http://p.yiqifa.com/c?s=4fa69d79&w=217523&c=4411&i=5362&l=0&e=114la&t=http://www.fclub.cn" >聚尚名品折扣</a>
-                                                            <a href="http://p.yiqifa.com/c?s=2cf837ba&w=217523&c=4459&i=5662&l=0&e=114la&t=http://www.suning.cn/webapp/wcs/stores/servlet/TopCategoriesDisplayView?storeId=10052&catalogId=10051" >苏宁易购</a>
-                                                            <a href="http://p.yiqifa.com/c?s=0a30a42c&w=217523&c=249&i=148&l=0&e=114la&t=http://www.redbaby.com.cn" >红孩子商城</a>
-                                                            <a href="http://p.yiqifa.com/c?s=dd1ad188&w=217523&c=139&i=802&l=0&e=114la&t=http://www.yihaodian.com/product/index.do" >一号店</a>
-                                                            <a href="http://s8.taobao.com/list.html?pid=mm_18036115_2311920_9044980&commend=all" >淘宝购物</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls15">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/bank/index.htm">银 行</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.cmbchina.com/" >招商银行</a>
-                                                            <a href="http://www.icbc.com.cn/" >工商银行</a>
-                                                            <a href="http://www.ccb.com/" >建设银行</a>
-                                                            <a href="http://www.boc.cn/" >中国银行</a>
-                                                            <a href="http://www.abchina.com/" >农业银行</a>
-                                                            <a href="http://www.gdb.com.cn/" >广发银行</a>
-                                                            <a href="http://www.chinaunionpay.com/" >中国银联</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/bank/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls16">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/car/index.htm">汽 车</a></dt>
-                        <dd class="l">
-                                                            <a href="http://www.autohome.com.cn/" >汽车之家</a>
-                                                            <a href="http://www.xcar.com.cn/?114la" >爱卡汽车</a>
-                                                            <a href="http://www.cheshi.com/" >车市</a>
-                                                            <a href="http://auto.sohu.com/?p=b5ed082ba0" >搜狐汽车</a>
-                                                            <a href="http://auto.sina.com.cn/?c=spr_web_sq_114la_auto_t001" class="green">新浪汽车</a>
-                                                            <a href="http://www.che168.com/" >车168</a>
-                                                            <a href="http://www.ucar.cn/?1214" class="red">优卡二手车</a>
-                                                            <a href="http://www.bitauto.com/?WT.mc_id=114la" >易车网</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/car/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls17">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/shouji/index.htm">手 机</a></dt>
-                        <dd class="l">
-                                                            <a href="http://mobile.pconline.com.cn/" >太平洋手机</a>
-                                                            <a href="http://mobile.it168.com/" >It168手机</a>
-                                                            <a href="http://digi.tech.qq.com/mobile/" >手机频道</a>
-                                                            <a href="http://mobile.pcpop.com/" >泡泡网手机</a>
-                                                            <a href="http://www.155.cn/" class="green">155手机游戏</a>
-                                                            <a href="http://digi.it.sohu.com/mobile.shtml" >搜狐手机</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/shouji/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls18">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/lvyouchuxing/index.htm">生 活</a></dt>
-                        <dd class="l">
-                                                            <a href="http://jipiao.kuxun.cn/?fromid=Klh-S1134481-T1139361" >酷讯机票</a>
-                                                            <a href="http://www.39.net/" >39健康网</a>
-                                                            <a href="http://www.ctrip.com/smartlink/smartlink.asp?c=114la" >携程旅行网</a>
-                                                            <a href="http://www.aifang.com/?utm_source=NAVI-114la-KZ&utm_medium=CPC&pi=NAVI-114la-KZ" >爱房网</a>
-                                                            <a href="http://www.daodao.com/DealsHome?m=13241" class="green">DaoDao旅游</a>
-                                                            <a href="http://www.pchouse.com.cn/" >太平洋家居</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/lvyouchuxing/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls19">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/rencai_zhaopin/index.htm">招 聘</a></dt>
-                        <dd class="l">
-                                                            <a href="http://jump.all4ad.cn/jump.aspx?id=334" >前程无忧</a>
-                                                            <a href="http://stbnnr.allyes.com/bnnr/114laxin_hr.html" >中华英才网</a>
-                                                            <a href="http://www.baixing.com/?bannerId=281&profile=job" >百姓招聘</a>
-                                                            <a href="http://www.cjol.com/" >中国人才热线</a>
-                                                            <a href="http://www.zhubajie.com/" >猪八戒网</a>
-                                                            <a href="http://rencai.baidu.com/servlet/ADMSU?sid=114la&site=114lakz&url=http%3A%2F%2Frencai.baidu.com&tokenstr=3673103c7da44cec9d9a2ee60061cf45" >百度人才</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/rencai_zhaopin/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls20">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/tiyu_jianshen/index.htm">体 育</a></dt>
-                        <dd class="l">
-                                                            <a href="http://sports.sina.com.cn/" >新浪体育</a>
-                                                            <a href="http://sports.sohu.com/" >搜狐体育</a>
-                                                            <a href="http://sports.163.com/" >网易体育</a>
-                                                            <a href="http://sports.tom.com/" >鲨威体坛</a>
-                                                            <a href="http://china.nba.com/" >NBA中文网</a>
-                                                            <a href="http://sports.cn.yahoo.com/index.html?f=E114_3_1" >雅虎体育</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/tiyu_jianshen/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl id="ls21">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/blog/index.htm">博 客</a></dt>
-                        <dd class="l">
-                                                            <a href="http://qzone.qq.com/" >QQ空间</a>
-                                                            <a href="http://blog.sina.com.cn/" >新浪博客</a>
-                                                            <a href="http://blog.163.com/" >网易博客</a>
-                                                            <a href="http://blog.sohu.com/" >搜狐博客</a>
-                                                            <a href="http://t.sina.com.cn/?c=spr_web_sq_114la_weibo_t001" style="color:#FF286B;">新浪微博</a>
-                                                            <a href="http://hi.baidu.com/" >百度空间</a>
-                                                            <a href="http://qing.sina.com.cn/" >新浪轻博客</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/blog/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                        <dl class="alt"id="ls22">
-                        <dt><a href="http://127.0.0.1:22222/114la_upload/html/luntan_shequ/index.htm">社 区</a></dt>
-                        <dd class="l">
-                                                            <a href="http://tieba.baidu.com/?fr=114la" >百度贴吧</a>
-                                                            <a href="http://www.tianya.cn/" >天涯社区</a>
-                                                            <a href="http://bbs.ifeng.com" >凤凰论坛</a>
-                                                            <a href="http://q.sohu.com/" >搜狐圈子</a>
-                                                            <a href="http://tt.mop.com/" >猫扑贴贴</a>
-                                                            <a href="http://bbs.ylmf.net/" >雨林木风论坛</a>
-                                                            <a href="http://q.115.com/" >115圈子</a>
-                                                    </dd>
-                        <dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/luntan_shequ/index.htm">更多 &raquo;</a></dd>
-                    </dl>
-                                    </div>
+                                        <dl id="ls1"><dt><a href="http://127.0.0.1:22222/114la_upload/html/wenxue_xiaoshuo/index.htm">小 说</a></dt><dd class="l"><a href="http://book.sina.com.cn/?c=spr_web_sq_114la_book_t001" >新浪小说</a><a href="http://www.qidian.com/" >起点中文</a><a href="http://www.hongxiu.com/?114la" >红袖言情</a><a href="http://www.zongheng.com/?CO=114la" >纵横小说</a><a href="http://www.txtbbs.com/" >txt小说网</a><a href="http://www.15.net/" >妖屋小说</a><a href="http://www.xs8.cn/" >言情小说吧</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/wenxue_xiaoshuo/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls2"><dt><a href="http://127.0.0.1:22222/114la_upload/html/youxi_wangyou/index.htm">游 戏</a></dt><dd class="l"><a href="http://www.4399.com/" >4399小游戏</a><a href="http://www.17173.com/" >17173</a><a href="http://www.unionli.com/txlink.php?alid=23792" >弹弹堂</a><a href="http://youxi.baidu.com/pm.xhtml?pid=11003800236_775910" style="color:#FF0130;">百度游戏</a><a href="http://www.51mole.com/" >摩尔庄园</a><a href="http://member.198game.com/sz/count.php?adid=1064" >幻想三国</a><a href="http://www.unionli.com/txlink.php?alid=24662" >梦幻修仙</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/youxi_wangyou/index.htm">更多 &raquo;</a></dd></dl><dl id="ls3"><dt><a href="http://127.0.0.1:22222/114la_upload/html/yinyue_mp3/index.htm">音 乐</a></dt><dd class="l"><a href="http://www.google.cn/music/homepage" >谷歌音乐</a><a href="http://music.kukaka.org/" >酷盒</a><a href="http://www.1ting.com/" >一听音乐</a><a href="http://www.kuwo.cn/114la/index.htm" >酷我音乐</a><a href="http://www.a8.com/" >A8音乐网</a><a href="http://www.top100.cn/" >巨鲸音乐</a><a href="http://www.kugou.com/2219/" >酷狗音乐</a><a href="http://mp3.baidu.com/m?ie=utf-8&ct=134217728&word=&tn=ylmf_1_pg" >百度MP3</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/yinyue_mp3/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls4"><dt><a href="http://127.0.0.1:22222/114la_upload/html/kuanpin_yingshi/index.htm">视 频</a></dt><dd class="l"><a href="http://www.tudou.com/" >土豆网</a><a href="http://www.qiyi.com/" >奇艺高清</a><a href="http://www.pptv.com/?rcc_id=831597960e40534af11b8d19426f39f9" >PPTV</a><a href="http://video.sina.com.cn/?c=spr_web_sq_114la_video_t001" >新浪视频</a><a href="http://c.ourclick.net/goto.html?t=17&ct=20&p=161&url=http%3A%2F%2Ftv.sohu.com%2Fhdtv" >搜狐高清</a><a href="http://www.funshion.com/?alliance=70903" >风行电影</a><a href="http://www.tom365.com/" >TOM365免费电影</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/kuanpin_yingshi/index.htm">更多 &raquo;</a></dd></dl><dl id="ls5"><dt><a href="http://127.0.0.1:22222/114la_upload/html/xiaoyouxi/index.htm">酷 玩</a></dt><dd class="l"><a href="http://www.4399.com/" >4399小游戏</a><a href="http://www.7k7k.com/" class="green">7k7k小游戏</a><a href="http://www.51seer.com/" >赛尔号</a><a href="http://www.junyilm.com/1031/catcon.asp?patat=64%2C5962" >3366游戏</a><a href="http://www.3887.com/" >3887小游戏</a><a href="http://www.unionli.com/txlink.php?alid=23793" >飞天西游</a><a href="http://wan.115.com/tg.php?g=22&c=114la" >战将传奇</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/xiaoyouxi/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls6"><dt><a href="http://127.0.0.1:22222/114la_upload/html/news/index.htm">新 闻</a></dt><dd class="l"><a href="http://news.sina.com.cn/" >新浪新闻</a><a href="http://www.people.com.cn/" >人民网</a><a href="http://news.cn.yahoo.com/?id=40020" >雅虎新闻</a><a href="http://news.sohu.com/" >搜狐新闻</a><a href="http://news.163.com/" >网易新闻</a><a href="http://www.huanqiu.com/" >环球新闻</a><a href="http://news.qq.com/" >腾讯新闻</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/news/index.htm">更多 &raquo;</a></dd></dl><dl id="ls7"><dt><a href="http://127.0.0.1:22222/114la_upload/html/junshi/index.htm">军 事</a></dt><dd class="l"><a href="http://military.china.com/" >中华网军事</a><a href="http://www.tiexue.net/" >铁血军事</a><a href="http://mil.huanqiu.com/" >环球军事</a><a href="http://mil.news.sina.com.cn/" >新浪军事</a><a href="http://news.ifeng.com/mil/" >凤凰网军事</a><a href="http://www.chinamil.com.cn/" >中国军网</a><a href="http://www.chinaiiss.org/" >战略网</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/junshi/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls8"><dt><a href="http://127.0.0.1:22222/114la_upload/html/caijinggushi/index.htm">财 经</a></dt><dd class="l"><a href="http://www.eastmoney.com/" >东方财富网</a><a href="http://finance.qq.com/" >腾讯财经</a><a href="http://www.jrj.com/?from=90005" class="red">金融界</a><a href="http://finance.sina.com.cn/" >新浪财经</a><a href="http://www.stockstar.com/" >证券之星</a><a href="http://www.hexun.com/" >和讯财经</a><a href="http://www.cnfol.com/" >中金在线</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/caijinggushi/index.htm">更多 &raquo;</a></dd></dl><dl id="ls9"><dt><a href="http://127.0.0.1:22222/114la_upload/html/mail/index.htm">邮 箱</a></dt><dd class="l"><a href="http://email.163.com/" >163邮箱</a><a href="http://www.126.com/" >126邮箱</a><a href="http://mail.qq.com/" >QQ邮箱</a><a href="http://mail.sina.com.cn/" >新浪邮箱</a><a href="http://mail.cn.yahoo.com/" >雅虎邮箱</a><a href="http://www.hotmail.com/" >Hotmail</a><a href="http://www.gmail.com/" >GMail</a><a href="http://mail.139.com/" >139邮箱</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/mail/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls10"><dt><a href="http://127.0.0.1:22222/114la_upload/html/soft/index.htm">电 脑</a></dt><dd class="l"><a href="http://www.it168.com/" >IT168电脑</a><a href="http://www.pconline.com.cn/" >太平洋电脑</a><a href="http://www.zol.com.cn/" >中关村在线</a><a href="http://www.xiazaiba.com/" class="green">绿色下载吧</a><a href="http://www.skycn.com/index.html" >天空软件</a><a href="http://www.pcpop.com/" >泡泡网</a><a href="http://www.mydrivers.com/" >驱动之家</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/soft/index.htm">更多 &raquo;</a></dd></dl><dl id="ls11"><dt><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">购 物</a></dt><dd class="l"><a href="http://www.amazon.cn/default.asp?source=114la" >卓越网</a><a href="http://p.yiqifa.com/c?s=67c0d2b4&w=217523&c=247&i=159&l=0&e=114la&t=http://www.dangdang.com" >当当网</a><a href="http://p.yiqifa.com/c?s=fd2887ec&w=217523&c=4275&i=4662&l=0&e=114la&t=http://www.m18.com" >麦考林</a><a href="http://p.yiqifa.com/c?s=368a4a7c&w=217523&c=4509&i=5862&l=0&e=114la&t=http://www.360buy.com" >京东商城</a><a href="http://www.vancl.com/?Source=alkj1" >凡客服饰</a><a href="http://p.yiqifa.com/c?s=5763f9c0&w=217523&c=4566&i=6222&l=0&e=114啦&t=http://www.vipshop.com/index.php" >唯品会折扣</a><a href="http://p.yiqifa.com/c?s=f41a1f6a&w=217523&c=1085&i=724&l=0&e=114la&t=http://www.ihush.com/index.php" >俏物悄语</a><a href="http://p.yiqifa.com/c?s=0a30a42c&w=217523&c=249&i=148&l=0&e=114la&t=http://www.redbaby.com.cn" >红孩子</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls12"><dt><a href="http://127.0.0.1:22222/114la_upload/html/love/index.htm">交 友</a></dt><dd class="l"><a href="http://www.jiayuan.com/st/?id=3985&url=http://www.jiayuan.com/register" class="red">世纪佳缘</a><a href="http://love.zhenai.com/901001.html" >珍爱婚恋网</a><a href="http://www.juyuan.com/reg/reg03index.xhtml?type=11" >聚缘婚恋网</a><a href="http://www.baihe.com/?policy=1&Channel=zyzt-wzz&Code=140026-114la" >百合网</a><a href="http://www.7651.com/reg/index.html?wf=114la&st=lmm&sid=&66vv.com" >红娘网</a><a href="http://spcode.baidu.com/spcode/spClick?tn=ylmf_sp&ctn=0&styleid=3959&tourl=http://www.juedui100.com/jueduiJumpResource/8959?prodid=90" >绝对100婚恋网</a><a href="http://www.renren.com/?ss=17043&rt=2&g=114la" >人人网</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/love/index.htm">更多 &raquo;</a></dd></dl><dl id="ls13"><dt><a href="http://127.0.0.1:22222/114la_upload/html/lady/index.htm">女 性</a></dt><dd class="l"><a href="http://www.27.cn/" >爱丽女性</a><a href="http://www.mishang.com/" >迷尚时尚网</a><a href="http://www.4738.com/?114la" >女人世界</a><a href="http://www.yoka.com/" >YOKA时尚</a><a href="http://www.rayli.com.cn/?114la" >瑞丽女性</a><a href="http://cnrdn.com/rd.htm?id=1005224&r=http%3A%2F%2Fwww.vogue.com.cn" >VOGUE时尚</a><a href="http://cnrdn.com/rd.htm?id=1005231&r=http%3A%2F%2Fwww.self.com.cn" >悦己SELF</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/lady/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls14"><dt><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">商 城</a></dt><dd class="l"><a href="http://www.taobao.com/go/chn/tbk_channel/onsale.php?pid=mm_24289994_2336862_9037898&unid=148311" >淘宝网特卖</a><a href="http://p.yiqifa.com/c?s=79f386af&w=217523&c=4220&i=4482&l=0&e=114la&t=www.lamiu.com" >兰缪内衣</a><a href="http://p.yiqifa.com/c?s=4fa69d79&w=217523&c=4411&i=5362&l=0&e=114la&t=http://www.fclub.cn" >聚尚名品折扣</a><a href="http://p.yiqifa.com/c?s=2cf837ba&w=217523&c=4459&i=5662&l=0&e=114la&t=http://www.suning.cn/webapp/wcs/stores/servlet/TopCategoriesDisplayView?storeId=10052&catalogId=10051" >苏宁易购</a><a href="http://p.yiqifa.com/c?s=0a30a42c&w=217523&c=249&i=148&l=0&e=114la&t=http://www.redbaby.com.cn" >红孩子商城</a><a href="http://p.yiqifa.com/c?s=dd1ad188&w=217523&c=139&i=802&l=0&e=114la&t=http://www.yihaodian.com/product/index.do" >一号店</a><a href="http://s8.taobao.com/list.html?pid=mm_18036115_2311920_9044980&commend=all" >淘宝购物</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/wangshanggouwu/index.htm">更多 &raquo;</a></dd></dl><dl id="ls15"><dt><a href="http://127.0.0.1:22222/114la_upload/html/bank/index.htm">银 行</a></dt><dd class="l"><a href="http://www.cmbchina.com/" >招商银行</a><a href="http://www.icbc.com.cn/" >工商银行</a><a href="http://www.ccb.com/" >建设银行</a><a href="http://www.boc.cn/" >中国银行</a><a href="http://www.abchina.com/" >农业银行</a><a href="http://www.gdb.com.cn/" >广发银行</a><a href="http://www.chinaunionpay.com/" >中国银联</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/bank/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls16"><dt><a href="http://127.0.0.1:22222/114la_upload/html/car/index.htm">汽 车</a></dt><dd class="l"><a href="http://www.autohome.com.cn/" >汽车之家</a><a href="http://www.xcar.com.cn/?114la" >爱卡汽车</a><a href="http://www.cheshi.com/" >车市</a><a href="http://auto.sohu.com/?p=b5ed082ba0" >搜狐汽车</a><a href="http://auto.sina.com.cn/?c=spr_web_sq_114la_auto_t001" class="green">新浪汽车</a><a href="http://www.che168.com/" >车168</a><a href="http://www.ucar.cn/?1214" class="red">优卡二手车</a><a href="http://www.bitauto.com/?WT.mc_id=114la" >易车网</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/car/index.htm">更多 &raquo;</a></dd></dl><dl id="ls17"><dt><a href="http://127.0.0.1:22222/114la_upload/html/shouji/index.htm">手 机</a></dt><dd class="l"><a href="http://mobile.pconline.com.cn/" >太平洋手机</a><a href="http://mobile.it168.com/" >It168手机</a><a href="http://digi.tech.qq.com/mobile/" >手机频道</a><a href="http://mobile.pcpop.com/" >泡泡网手机</a><a href="http://www.155.cn/" class="green">155手机游戏</a><a href="http://digi.it.sohu.com/mobile.shtml" >搜狐手机</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/shouji/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls18"><dt><a href="http://127.0.0.1:22222/114la_upload/html/lvyouchuxing/index.htm">生 活</a></dt><dd class="l"><a href="http://jipiao.kuxun.cn/?fromid=Klh-S1134481-T1139361" >酷讯机票</a><a href="http://www.39.net/" >39健康网</a><a href="http://www.ctrip.com/smartlink/smartlink.asp?c=114la" >携程旅行网</a><a href="http://www.aifang.com/?utm_source=NAVI-114la-KZ&utm_medium=CPC&pi=NAVI-114la-KZ" >爱房网</a><a href="http://www.daodao.com/DealsHome?m=13241" class="green">DaoDao旅游</a><a href="http://www.pchouse.com.cn/" >太平洋家居</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/lvyouchuxing/index.htm">更多 &raquo;</a></dd></dl><dl id="ls19"><dt><a href="http://127.0.0.1:22222/114la_upload/html/rencai_zhaopin/index.htm">招 聘</a></dt><dd class="l"><a href="http://jump.all4ad.cn/jump.aspx?id=334" >前程无忧</a><a href="http://stbnnr.allyes.com/bnnr/114laxin_hr.html" >中华英才网</a><a href="http://www.baixing.com/?bannerId=281&profile=job" >百姓招聘</a><a href="http://www.cjol.com/" >中国人才热线</a><a href="http://www.zhubajie.com/" >猪八戒网</a><a href="http://rencai.baidu.com/servlet/ADMSU?sid=114la&site=114lakz&url=http%3A%2F%2Frencai.baidu.com&tokenstr=3673103c7da44cec9d9a2ee60061cf45" >百度人才</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/rencai_zhaopin/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls20"><dt><a href="http://127.0.0.1:22222/114la_upload/html/tiyu_jianshen/index.htm">体 育</a></dt><dd class="l"><a href="http://sports.sina.com.cn/" >新浪体育</a><a href="http://sports.sohu.com/" >搜狐体育</a><a href="http://sports.163.com/" >网易体育</a><a href="http://sports.tom.com/" >鲨威体坛</a><a href="http://china.nba.com/" >NBA中文网</a><a href="http://sports.cn.yahoo.com/index.html?f=E114_3_1" >雅虎体育</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/tiyu_jianshen/index.htm">更多 &raquo;</a></dd></dl><dl id="ls21"><dt><a href="http://127.0.0.1:22222/114la_upload/html/blog/index.htm">博 客</a></dt><dd class="l"><a href="http://qzone.qq.com/" >QQ空间</a><a href="http://blog.sina.com.cn/" >新浪博客</a><a href="http://blog.163.com/" >网易博客</a><a href="http://blog.sohu.com/" >搜狐博客</a><a href="http://t.sina.com.cn/?c=spr_web_sq_114la_weibo_t001" style="color:#FF286B;">新浪微博</a><a href="http://hi.baidu.com/" >百度空间</a><a href="http://qing.sina.com.cn/" >新浪轻博客</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/blog/index.htm">更多 &raquo;</a></dd></dl><dl class="alt"id="ls22"><dt><a href="http://127.0.0.1:22222/114la_upload/html/luntan_shequ/index.htm">社 区</a></dt><dd class="l"><a href="http://tieba.baidu.com/?fr=114la" >百度贴吧</a><a href="http://www.tianya.cn/" >天涯社区</a><a href="http://bbs.ifeng.com" >凤凰论坛</a><a href="http://q.sohu.com/" >搜狐圈子</a><a href="http://tt.mop.com/" >猫扑贴贴</a><a href="http://bbs.ylmf.net/" >雨林木风论坛</a><a href="http://q.115.com/" >115圈子</a></dd><dd class="m"><a href="http://127.0.0.1:22222/114la_upload/html/luntan_shequ/index.htm">更多 &raquo;</a></dd></dl>                </div>
                 <b class="rc-bt"><b></b></b></div>
         </div>
     </div>
     <div id="meta"><b class="rc-tp"><b></b></b>
         <div class="box">
             <ul>
-                            <li class="bd">
+                                            <li class="bd">
             <strong><a href="http://127.0.0.1:22222/114la_upload/html/topic/game/index.htm">单机游戏</a></strong>
                                     <a href="http://127.0.0.1:22222/114la_upload/html/topic/game/index.htm#22">红色警戒</a>
                         <a href="http://127.0.0.1:22222/114la_upload/html/topic/game/index.htm#26">魔兽争霸</a>
@@ -929,7 +677,7 @@
         </div>
         <b class="rc-bt"><b></b></b></div>
     <div id="footer">
-        <div class="link"><a href="http://www.114la.com/114la/">关于114啦建站系统V1.15</a> | <a href="/url-submit/">网站提交</a> | <a href="http://127.0.0.1:22222/114la_upload/feedback">意见反馈</a> | <a href="http://www.114la.com/114la">源码下载</a><br />
+        <div class="link"><a href="http://www.114la.com/114la/">关于114啦建站系统V1.15</a> | <a href="http://127.0.0.1:22222/114la_upload/url-submit/">网站提交</a> | <a href="http://127.0.0.1:22222/114la_upload/feedback">意见反馈</a> | <a href="http://www.114la.com/114la/">源码下载</a><br />
         </div>
         <div class="hr"></div>
         <p class="copyright">Powered by 114啦网址导航&copy;2005-<script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved. <a href="http://www.miibeian.gov.cn/">粤ICP备05021225号</a></p>

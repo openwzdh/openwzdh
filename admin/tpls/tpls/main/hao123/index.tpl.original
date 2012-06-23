@@ -113,8 +113,8 @@
                     </p><!--/ keywords-->
                 </div>
                 <div class="sf">
-                    <form action="http://115.com/s" method="get" target="_blank">
-                        <a href="http://115.com" id="sf_label" rel="lk"><img src="static/images/s/115.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="115聚搜" rel="btn" />
+                    <form action="http://116.com/" method="get" target="_blank">
+                        <a href="http://116.com" id="sf_label" rel="lk"><img src="static/images/s/116.gif" width="105" height="35" rel="img" /></a><input type="text" name="q" class="int" autocomplete="off" rel="kw"/><input class="searchint" type="submit" value="116聚搜" rel="btn" />
                         <div class="ctrl">
                         <{foreach from=$search item=row1}>
                             <{if $row1.class == $search_class2.classid}>
@@ -202,7 +202,7 @@
                             </form>
                         </div>
                         <div id="tb4" class="tbox" style="margin-left:-5px;">
-                            <form class="plane" action="http://www.915.com/cz/" method="post" target="_blank">
+                            <form class="plane" action="http://cz.115.com/" method="post" target="_blank">
                                 <p class="first">
                                     <select name="parvalue" style="font-size:12px; padding:1px;">
                                     	<option value="300">300元</option>
@@ -265,8 +265,24 @@
             </div>
             <div id="ls"><b class="rc-tp"><b></b></b>
                 <div class="box">
+					<{*城市导航*}>
+                    <dl id="local" class="alt" style="visibility:hidden;">
+                        <dt id="loc_t"></dt>
+                        <dd class="l" id="loc_c"></dd>
+                        <dd class="m" id="loc_m"></dd>
+                    </dl>
                     <{*酷站导航*}>
-                    <{foreach from = $kz_list key ='key' item = 'item' name = n}><dl <{if $smarty.foreach.n.iteration % 2 eq 0}>class="alt"<{/if}>id="ls<{$smarty.foreach.n.iteration}>"><dt><a href="<{$item.url}>"><{$key}></a></dt><dd class="l"><{foreach key='k' item='v' from=$item.son}><a href="<{$v.url}>" <{if $v.namecolor=='#FF0000' || $v.namecolor=='red'}>class="red"<{elseif $v.namecolor=='#008000' || $v.namecolor=='green'}>class="green"<{elseif $v.namecolor=='#0000FF' || $v.namecolor=='blue'}>class="blue"<{elseif $v.namecolor!=''}>style="color:<{$v.namecolor}>;"<{/if}>><{$v.name}></a><{/foreach}></dd><dd class="m"><a href="<{$item.url}>">更多 &raquo;</a></dd></dl><{/foreach}>
+                    <{foreach from = $kz_list key ='key' item = 'item' name = n}>
+                    <dl <{if $smarty.foreach.n.iteration % 2 eq 0}>class="alt"<{/if}>id="ls<{$smarty.foreach.n.iteration}>">
+                        <dt><a href="<{$item.url}>"><{$key}></a></dt>
+                        <dd class="l">
+                            <{foreach key='k' item='v' from=$item.son}>
+                                <a href="<{$v.url}>" <{if $v.namecolor=='#FF0000' || $v.namecolor=='red'}>class="red"<{elseif $v.namecolor=='#008000' || $v.namecolor=='green'}>class="green"<{elseif $v.namecolor=='#0000FF' || $v.namecolor=='blue'}>class="blue"<{elseif $v.namecolor!=''}>style="color:<{$v.namecolor}>;"<{/if}>><{$v.name}></a>
+                            <{/foreach}>
+                        </dd>
+                        <dd class="m"><a href="<{$item.url}>">更多 &raquo;</a></dd>
+                    </dl>
+                    <{/foreach}>
                 </div>
                 <b class="rc-bt"><b></b></b></div>
         </div>
@@ -275,39 +291,17 @@
         <div class="box">
             <ul>
             <{*专题*}>
-        <{foreach from = $zhuanti key = k item = parent}>
+        <{foreach from = $topics item = parent}>
         <li class="bd">
-            <strong><a href="<{$URL_HTML}>/catalog/<{$k}>.htm"><{$parent.name}></a></strong>
+            <strong><a href="<{$URL_HTML}>/topic/<{$parent.path}>/index.htm"><{$parent.name}></a></strong>
+            <{if !empty($parent.son)}>
             <{foreach from = $parent.son item = v}>
-            <a href="<{$URL_HTML}>/catalog/<{$k}>.htm#<{$v.id}>"><{$v.name}></a>
+            <a href="<{if $v.url}><{$v.url}><{else}><{$URL_HTML}>/topic/<{$parent.path}>/index.htm#<{$v.id}><{/if}>"><{$v.name}></a>
             <{/foreach}>
-            <span class="more"><a href="<{$URL_HTML}>/catalog/<{$k}>.htm">更多 &raquo;</a></span>
+            <{/if}>
+            <span class="more"><a href="<{$URL_HTML}>/topic/<{$parent.path}>/index.htm">更多 &raquo;</a></span>
         </li>
         <{/foreach}>
-        <li class="bd">
-            <strong><a href="<{$URL_HTML}>/local/">地方服务</a></strong>
-            <a  href="<{$URL_HTML}>/local/beijing.htm" title="北京">北京</a>
-            <a  href="<{$URL_HTML}>/local/tianjin.htm" title="天津">天津</a>
-            <a  href="<{$URL_HTML}>/local/guangdong.htm" title="广东">广东</a>
-            <a  href="<{$URL_HTML}>/local/hebei.htm" title="河北">河北</a>
-            <a  href="<{$URL_HTML}>/local/shanxi.htm" title="山西">山西</a>
-            <a  href="<{$URL_HTML}>/local/liaoning.htm" title="辽宁">辽宁</a>
-            <a  href="<{$URL_HTML}>/local/heilongjiang.htm" title="黑龙江">黑龙江</a>
-            <a  href="<{$URL_HTML}>/local/shanghai.htm" title="上海">上海</a>
-            <a  href="<{$URL_HTML}>/local/jiangsu.htm" title="江苏">江苏</a>
-            <a  href="<{$URL_HTML}>/local/zhejiang.htm" title="浙江">浙江</a>
-            <a  href="<{$URL_HTML}>/local/anhui.htm" title="安徽">安徽</a>
-            <a  href="<{$URL_HTML}>/local/fujian.htm" title="福建">福建</a>
-            <a  href="<{$URL_HTML}>/local/jiangxi.htm" title="江西">江西</a>
-            <a  href="<{$URL_HTML}>/local/shandong.htm" title="山东">山东</a>
-            <a  href="<{$URL_HTML}>/local/henan.htm" title="河南">河南</a>
-            <a  href="<{$URL_HTML}>/local/hubei.htm" title="湖北">湖北</a>
-            <a  href="<{$URL_HTML}>/local/taiwan.htm" title="台湾">台湾</a>
-            <a  href="<{$URL_HTML}>/local/aomen.htm" title="澳门">澳门</a>
-            <a  href="<{$URL_HTML}>/local/hongkong.htm" title="香港">香港</a>
-
-            <span class="more"><a href="<{$URL_HTML}>/local/">更多 &raquo;</a></span>
-        </li>
          <{if $links}>
          <li class="bd">
             <strong><a href="<{$URL_HTML}>/catalog/links.htm">友情链接</a></strong>
@@ -322,7 +316,7 @@
     </div>
     <div id="fs">
         <div class="box">
-            <form id="fs_form" onsubmit="miniSearch.gosearch(this);return false;" action="http://115.com/s" target="_blank" method="get">
+            <form id="fs_form" onsubmit="miniSearch.gosearch(this);return false;" action="http://116.com/s" target="_blank" method="get">
             <ul class="clearfix">
             <li id="f_label">关键字：</li>
             <li id="f_int">
@@ -338,7 +332,7 @@
             <input type="text" name="q" id="taobao-q" />
             </form>
             <div id="f_radio">
-            <label for="s0"><input type="radio" name="st" class="radio" id="s0" checked="checked" />115搜索</label>
+            <label for="s0"><input type="radio" name="st" class="radio" id="s0" checked="checked" />116搜索</label>
             <label for="s1"><input type="radio" name="st" class="radio" id="s1" />Google</label>
             <label for="s3"><input type="radio" name="st" class="radio" id="s3" />淘宝</label>
             <label for="s5"><input type="radio" name="st" class="radio" id="s5" />购物客</label>
@@ -347,10 +341,10 @@
         </div>
         <b class="rc-bt"><b></b></b></div>
     <div id="footer">
-        <div class="link"><a href="http://www.114la.com/114la/index.html">关于114啦建站系统V1.14</a> | <a href="/url-submit/">网站提交</a> | <a href="/feedback">意见反馈</a> | <a href="/114la">源码下载</a><br />
+        <div class="link"><a href="http://www.114la.com/114la/">关于114啦建站系统V1.15</a> | <a href="/url-submit/">网站提交</a> | <a href="<{$URL}>/feedback">意见反馈</a> | <a href="http://www.114la.com/114la">源码下载</a><br />
         </div>
         <div class="hr"></div>
-        <p class="copyright">Powered by 114啦网址导航&copy;2005-<script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved. </p>
+        <p class="copyright">Powered by 114啦网址导航&copy;2005-<script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved. <a href="http://www.miibeian.gov.cn/"><{$icp}></a></p>
 
     </div>
 <script type="text/javascript" src="<{$URL}>/public/home/js/config.js"></script>
@@ -412,3 +406,4 @@
 
 </body>
 </html>
+
