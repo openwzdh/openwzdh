@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <table class="admin-tb">
-                    <tr class="nodrop nodrag">
+                    <tr>
                     	<th width="41" class="text-center">选择</th>
                     	<th width="97">智能排序</th>
                         <th width="248">分类名称</th>

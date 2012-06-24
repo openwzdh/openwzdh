@@ -8,7 +8,7 @@
 <script type="text/javascript" src="static/js/common.js"></script>
 <!--  <script type="text/javascript" src="jquery-ui-1.8.21.custom.min.js"></script> -->
   <link href="css/smoothness/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="static/js/jquery.tablednd.0.7.min.js"></script>
+  <script type="text/javascript" src="jquery.tablednd.0.7.min.js"></script>
 </head>
 <body id="main_page">
 		<div id="nav" style="display:none;">

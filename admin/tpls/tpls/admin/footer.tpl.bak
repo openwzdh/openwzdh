@@ -13,7 +13,6 @@ Powered by <a href="http://www.ylmf.com" target="_blank"> <b>ÓêÁÖÄ¾·ç</b></a> &c
 		var tp = document.getElementsByTagName('script')[0]; tp.parentNode.insertBefore(tj,tp);
 	})();
 </script>
-<script type="text/javascript" src="<{$URL}>/public/home/js/jquery.jeditable.js"></script>
 </div>
 </body>
 </html>
